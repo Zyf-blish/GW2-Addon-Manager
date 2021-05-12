@@ -44,6 +44,8 @@ namespace GW2_Addon_Manager
                     File.Delete(tempFileName);
 
                 //fetching new version
+                client = new WebClient();
+                client.Headers.Add("User-Agent", "Gw2 Addon Manager");
                 client.DownloadFile(RepoUrl + "/zipball", tempFileName);
                 ZipFile.ExtractToDirectory(tempFileName, AddonFolder);
                 var downloaded = Directory.EnumerateDirectories(AddonFolder).First();
