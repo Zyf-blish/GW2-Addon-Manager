@@ -265,12 +265,11 @@ namespace GW2_Addon_Manager.Backend.Updating
                 }
 
                 addonConfiguration.Disabled = true;
-                _configurationManager.SaveConfiguration();
             }
         }
 
         private AddonData GetAddonConfig() => _configurationManager.UserConfig.AddonsList.FirstOrDefault(a =>
-            string.Compare(a.Name, _addonInfo.addon_name, StringComparison.InvariantCultureIgnoreCase) == 0);
+            string.Compare(a.Name, _addonInfo.folder_name, StringComparison.InvariantCultureIgnoreCase) == 0);
 
         /***** ENABLE *****/
         public void Enable()
@@ -324,7 +323,6 @@ namespace GW2_Addon_Manager.Backend.Updating
                 }
 
                 addonConfiguration.Disabled = false;
-                _configurationManager.SaveConfiguration();
             }
         }
 
@@ -389,8 +387,6 @@ namespace GW2_Addon_Manager.Backend.Updating
                         }
                     }
                 }
-
-                _configurationManager.SaveConfiguration();
             }
         }
 
