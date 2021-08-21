@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Windows;
 using GW2_Addon_Manager.App.Configuration;
+using GW2_Addon_Manager.Backend.Updating;
 using GW2_Addon_Manager.Dependencies.WebClient;
 using JetBrains.Annotations;
 
