@@ -1,9 +1,7 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
-
   <ItemGroup>
     <Compile Update="StaticText.Designer.cs">
       <DesignTime>True</DesignTime>
@@ -16,7 +14,6 @@
       <DependentUpon>StaticText.es.resx</DependentUpon>
     </Compile>
   </ItemGroup>
-
   <ItemGroup>
     <EmbeddedResource Update="StaticText.es.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -27,5 +24,4 @@
       <LastGenOutput>StaticText.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
-
 </Project>
